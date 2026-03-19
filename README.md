@@ -70,4 +70,45 @@ else:
 ```
 
 #2
+```python
+numero = int(input("Escolha um número inteiro: "))
+if numero >=10 and numero <=50:
+    print("Seu número está entre 10 e 50")
+elif numero > 50:
+    print("Seu número é maior que 50")
+elif numero < 10:
+    print("Seu número é menor que 10")
+```
 
+#3
+```python
+ano = int(input("Digite um ano: "))
+bissexto = ano / 4 or 400 and not 100
+if bissexto % 2 == 0:
+    print(f"{ano} é um ano bissexto")
+else:
+    print(f"{ano} não é um ano bissexto")
+```
+
+#4
+```python
+print("Bem-vindo ao sistema de login")
+nome = ("admin")
+password = ("1234")
+
+tentativas = 0
+
+while tentativas < 3:
+    usuario = input("Digite seu nome de usuário: ")
+    senha = input("Digite sua senha: ")
+
+    if nome == usuario and password == senha:
+        print("Login realizado com susesso!")
+        break
+    else:
+        print("Usuário ou senha incorretos.")
+    tentativas += 1
+
+if tentativas == 3:
+    print("Acesso bloqueado!")
+```
