@@ -112,3 +112,17 @@ while tentativas < 3:
 if tentativas == 3:
     print("Acesso bloqueado!")
 ```
+
+#5
+```python
+coordenadaX = int(input("Digite a coordenada x: "))
+coordenadaY = int(input("Digite a coordenada y: "))
+if (coordenadaX == 0 or coordenadaX == 10 or coordenadaY == 0 or coordenadaY == 10):
+    print("Na fronteira")
+
+elif 0 < coordenadaX < 10 and 0 < coordenadaY < 10:
+    print("Dentro do quadrado")
+
+else:
+    print("Fora do quadrado")
+```
